@@ -28,6 +28,7 @@ public class Application extends SpringBootServletInitializer {
     private String port;
 
     public static void main(String[] args) {
+	 System.out.println("this is a for test purpose to check the pipeline is running or not");
         SpringApplication.run(Application.class, args);
     }
 
