@@ -38,6 +38,11 @@ public class SwaggerDocket {
                 .apiInfo(buildApiInfo());
     }
 
+
+
+
+
+
     protected Predicate<RequestHandler> buildApiRequestHandler() {
         if (!CollectionUtils.isEmpty(config.getBaseApiPackages())) {
             System.out.println("Building api request handler from base packages: " + config.getBaseApiPackages().toString());
@@ -120,3 +125,6 @@ public class SwaggerDocket {
         return contact != null ? new Contact(contact.getName(), contact.getUrl(), contact.getEmail()) : null;
     }
 }
+
+
+
